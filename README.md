@@ -79,16 +79,16 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
-  ## Support & Contact
-  For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
+## Support & Contact
+For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
-  ## Known Issues (*Desired Improvements*)
-  *
+## Known Issues (*Desired Improvements*)
+*
 
-  ## Technologies Used
-  TypeScript, Angular2, Sass, Gulp, Bower
+## Technologies Used
+TypeScript, Angular2, Sass, Gulp, Bower
 
-  ## Legal
-  *Licensed under the GNU General Public License v3.0*
+## Legal
+*Licensed under the GNU General Public License v3.0*
 
-  Copyright (c) 2016 Copyright _[Alexander Jacks](https://github.com/Adjectival), [Dean Scelza](https://github.com/d34n5), [Garrett Price](https://github.com/GarrettLeePrice), [Karen Freeman-Smith](https://github.com/karenfreemansmith)_ All Rights Reserved.
+Copyright (c) 2016 Copyright _[Alexander Jacks](https://github.com/Adjectival), [Dean Scelza](https://github.com/d34n5), [Garrett Price](https://github.com/GarrettLeePrice), [Karen Freeman-Smith](https://github.com/karenfreemansmith)_ All Rights Reserved.
