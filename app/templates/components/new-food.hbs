@@ -1,0 +1,28 @@
+<form>
+  <div class="form-group">
+    <label for="food">Food: </label>
+    {{input value=new-food id="new-food"}}
+  </div>
+  <div class="form-group">
+    <label for="calories">Calories: </label>
+    {{input value=new-calories id="new-calories"}}
+  </div>
+  <div class="form-group">
+    <label for="protein">Protein: </label>
+    {{input value=new-protein id="new-protein"}}
+  </div>
+  <div class="form-group">
+    <label for="carbs">Carbs: </label>
+    {{input value=new-carbs id="new-carbs"}}
+  </div>
+  <div class="form-group">
+    <label for="fat">Fat: </label>
+    {{input value=new-fat id="new-fat"}}
+  </div>
+  <div class="form-group">
+    <label for="category">Category: </label>
+    {{input value=new-category id="new-category"}}
+  </div>
+
+  <button {{action 'addNewFood'}}>Add New Food</button>
+</form>
