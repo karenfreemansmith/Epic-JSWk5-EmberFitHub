@@ -1,0 +1,25 @@
+<h3>Signup</h3>
+{{#if addNewActivity}}
+<div>
+<form>
+  <div class="form-group">
+    <label for="description">Description: </label>
+    {{input value=description id="description"}}
+  </div>
+
+  <div class="form-group">
+    <label for="amount">Goal Amount: </label>
+    {{input value=amount id="amount"}}
+  </div>
+
+  <div class="form-group">
+    <label for="units">Units: </label>
+    {{input value=units id="units"}}
+  </div>
+
+  <button {{action 'saveActivity'}}>Save</button>
+</form>
+</div>
+{{else}}
+  <button {{action 'activityFormShow'}}>Add Activity</button>
+{{/if}}
