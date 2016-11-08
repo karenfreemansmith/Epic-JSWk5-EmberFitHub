@@ -1,20 +1,44 @@
-<h3>SignIn</h3>
-{{#if loggedOut}}
+<h3>Update User</h3>
+{{#if editUser}}
 <div>
-<form>
-  <div class="form-group">
-    <label for="email">Email: </label>
-    {{input value=email id="email"}}
-  </div>
+  <form>
+    <div class="form-group">
+      <label for="username">Username: </label>
+      {{input value=model.username id="username"}}
+    </div>
 
-  <div class="form-group">
-    <label for="password">Password: </label>
-    {{input value=password id="password"}}
-  </div>
+    <div class="form-group">
+      <label for="password">Password: </label>
+      {{input value=model.password id="password"}}
+    </div>
 
-  <button {{action 'userLogIn'}}>Save</button>
-</form>
+    <div class="form-group">
+      <label for="email">Email: </label>
+      {{input value=model.email id="email"}}
+    </div>
+
+    <div class="form-group">
+      <label for="firstname">First Name: </label>
+      {{input value=model.firstname id="firstname"}}
+    </div>
+
+    <div class="form-group">
+      <label for="lastname">Last Name: </label>
+      {{input value=model.lastname id="lastname"}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image URL</label>
+      {{input value=model.image id="image"}}
+    </div>
+    <div class="form-group">
+      <label for="goal">Daily Calorie Goal: </label>
+      {{input value=model.goal id="goal"}}
+    </div>
+
+    <button {{action 'saveUser'}}>Save User</button>
+  </form>
 </div>
 {{else}}
-  <button {{action 'logInFormShow'}}>Sign-In</button>
+  <button {{action 'userFormShow'}}>Edit User</button>
 {{/if}}

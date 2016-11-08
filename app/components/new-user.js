@@ -12,6 +12,8 @@ export default Ember.Component.extend({
         lastname: this.get('lastname'),
         username: this.get('username'),
         email: this.get('email'),
+        password: this.get('password'),
+        goal: this.get('goal'),
         image: this.get('image'),
       };
       this.set('addNewUser', false);

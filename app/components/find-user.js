@@ -1,18 +1,24 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  loggedOut: false,
+  editUser: false,
+
   actions: {
-    logInFormShow() {
-      this.set('loggedOut', true);
+    userFormShow() {
+      this.set('editUser', true);
     },
-    userLogIn() {
+    saveUser() {
       var params = {
-        email: this.get('email'),
+        username: this.get('username'),
         password: this.get('password'),
+        email: this.get('email'),
+        firstname: this.get('firstname'),
+        lastname: this.get('lastname'),
+        image: this.get('image'),
+        goal: this.get('goal'),
       };
-      this.set('loggedOut', false);
-      this.sendAction('userLogIn', params);
+      this.set('editUser', false);
+      this.sendAction('saveUser', params);
     }
   }
 });
