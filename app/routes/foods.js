@@ -10,7 +10,17 @@ export default Ember.Route.extend({
       newFood.save();
       console.log(params);
       this.transitionTo('foods');
-    }
+    },
+    updateFood(food, params) {
+     Object.keys(params).forEach(function(key) {
+       if(params[key]!==undefined) {
+         food.set(key,params[key]);
+       }
+     });
+     food.save();
+     this.transitionTo('foods');
+   },
+
   }
 
 
