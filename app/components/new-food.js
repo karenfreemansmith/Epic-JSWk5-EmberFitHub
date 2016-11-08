@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   menuFood: null,
-	menuFoods: Ember.String.w('coffee tea baby_bottle beer tropical_drink sake wine_glass pizza egg bento hamburger meat_on_bone sushi fries curry stew green_apple cookie cake candy'),
+	menuFoods: Ember.String.w('coffee tea baby_bottle beer tropical_drink sake wine_glass herb green_apple cherries corn rice bento pizza hamburger meat_on_bone ramen spaghetti sushi fries curry stew lollipop cookie cake candy icecream question'),
   model() {
     return this.store.findAll('food');
   },

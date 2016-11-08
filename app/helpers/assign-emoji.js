@@ -7,7 +7,7 @@ export function assignEmoji(params) {
 	if(grabCategory !== null) {
     // grabCategory.set('food.category');
     // console.log(food.category);
-    return Ember.String.htmlSafe('<span>'+food+'</span>');
+    return Ember.String.htmlSafe('<span class="EMOJI"><i class="em em-'+food+'"></i></span>');
 	} else {
     return Ember.String.w('catfood');
   }
