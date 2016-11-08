@@ -6,6 +6,5 @@ export default DS.Model.extend({
   protein: DS.attr(),
   carbs: DS.attr(),
   fat: DS.attr(),
-  category: DS.attr()
-
+  category: DS.attr(),
 });

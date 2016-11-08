@@ -1,12 +1,18 @@
 import Ember from 'ember';
 
 export function assignEmoji(params) {
-
   var food = params[0];
-	if(food.get('emojiFood') != null) {
-    console.log("passed the emoji");
-    // return Ember.String.htmlSafe('<span>Yay</span>');
-	}
+  console.log(food);
+  var grabCategory = food;
+	if(grabCategory !== null) {
+    // grabCategory.set('food.category');
+    // console.log(food.category);
+    return Ember.String.htmlSafe('<span>'+food+'</span>');
+	} else {
+    return Ember.String.w('catfood');
+  }
 }
+
+// whoa, write to AND serve from firebase
 
 export default Ember.Helper.helper(assignEmoji);
