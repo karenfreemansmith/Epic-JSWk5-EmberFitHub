@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         username: this.get('username'),
         email: this.get('email'),
         image: this.get('image'),
-      }
+      };
       this.set('addNewUser', false);
       this.sendAction('saveUser', params);
     }

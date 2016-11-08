@@ -5,13 +5,6 @@ export default Ember.Route.extend({
     return this.store.findAll('user');
   },
   actions: {
-    saveUser(params) {
-      var newUser = this.store.createRecord('user', params);
-      newUser.save();
-      this.transitionTo('users');
-    },
-    userLogIn(params) {
-      
-    }
+
   }
 });
