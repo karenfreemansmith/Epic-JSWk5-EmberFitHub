@@ -1,6 +1,6 @@
-import Ember from 'ember';
-//
-export function searchableSelect(selection) {
+// import Ember from 'ember';
+// //
+// export function searchableSelect(selection) {
 //   classNames: 'food',
 //   setBySearchable: null,
 //   actions: {
@@ -8,6 +8,6 @@ export function searchableSelect(selection) {
 //       this.set('setBySearchable', selection);
 //     },
 //   return selection;
-}
+// }
 //
-export default Ember.Helper.helper(searchableSelect);
+// export default Ember.Helper.helper(searchableSelect);

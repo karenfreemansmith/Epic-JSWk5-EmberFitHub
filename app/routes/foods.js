@@ -11,9 +11,5 @@ export default Ember.Route.extend({
       console.log(params);
       this.transitionTo('foods');
     },
-
-
   }
-
-
 });

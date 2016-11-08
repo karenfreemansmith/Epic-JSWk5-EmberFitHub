@@ -1,5 +1,33 @@
+{{!-- https://github.com/thefrontside/emberx-select --}}
 <h3>Foods</h3>
-{{special-search food=food}}
+{{!-- {{#x-select value="coffee" action="selectFood" as |xs|}} --}}
+{{!-- {{#xs.optgroup label="Drinks"}}
+   {{#xs.option value="coffee"}}Coffee/Chai{{/xs.option}}
+   {{#xs.option value="tea"}}Tea{{/xs.option}}
+   {{#xs.option value="baby_bottle"}}Dairy Drink{{/xs.option}}
+   {{#xs.option value="beer"}}Brewed Drink{{/xs.option}}
+   {{#xs.option value="tropical_drink"}}Concoction{{/xs.option}}
+   {{#xs.option value="sake"}}Grain Wine{{/xs.option}}
+   {{#xs.option value="wine_glass"}}Fruit Wine{{/xs.option}}
+{{/xs.optgroup}} --}}
+{{!-- {{#xs.optgroup label="Meals"}}
+   {{#xs.option value="pizza"}}Bread+{{/xs.option}}
+     {{#xs.option value="egg"}}Simple Protein{{/xs.option}}
+     {{#xs.option value="bento"}}Small, Healthy{{/xs.option}}
+     {{#xs.option value="hamburger"}}Sandwich/Burger{{/xs.option}}
+     {{#xs.option value="meat_on_bone"}}Cooked Meat{{/xs.option}}
+     {{#xs.option value="sushi"}}Raw Meat{{/xs.option}}
+     {{#xs.option value="fries"}}Potato Based{{/xs.option}}
+     {{#xs.option value="curry"}}Rice Based{{/xs.option}}
+     {{#xs.option value="stew"}}Stew{{/xs.option}}
+  {{/xs.optgroup}} --}}
+   {{!-- {{#xs.optgroup label="Snacks"}}
+     {{#xs.option value="green_apple"}}Healthy{{/xs.option}}
+     {{#xs.option value="cookie"}}Small Snacks{{/xs.option}}
+     {{#xs.option value="cake"}}Piggy Treat{{/xs.option}}
+     {{#xs.option value="candy"}}Candy{{/xs.option}}
+   {{/xs.optgroup}} --}}
+{{!-- {{/x-select}} --}}
 {{new-food food=model addNewFood="addNewFood"}}
 
 {{#each model as |food|}}
