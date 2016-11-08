@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('goals');
   this.route('activities');
   this.route('stats');
+  this.route('food', {path: '/food/:food_id'});
 });
 
 export default Router;
