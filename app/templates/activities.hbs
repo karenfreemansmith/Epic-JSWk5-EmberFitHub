@@ -1,4 +1,7 @@
 <h3>Activities</h3>
 {{new-activity saveActivity="saveActivity"}}
-{{find-activity}}
-{{list-activity}}
+
+
+{{#each model as |activity|}}
+  {{list-activity activity=activity}}
+{{/each}}
