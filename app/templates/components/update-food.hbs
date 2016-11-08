@@ -2,27 +2,27 @@
 <form>
   <div class="form-group">
     <label for="food">Food: </label>
-    {{input value=new-food id="new-food"}}
+    {{input value=food.food id="edit-food"}}
   </div>
   <div class="form-group">
     <label for="calories">Calories: </label>
-    {{input value=new-calories id="new-calories"}}
+    {{input value=food.calories id="edit-calories"}}
   </div>
   <div class="form-group">
     <label for="protein">Protein: </label>
-    {{input value=new-protein id="new-protein"}}
+    {{input value=food.protein id="edit-protein"}}
   </div>
   <div class="form-group">
     <label for="carbs">Carbs: </label>
-    {{input value=new-carbs id="new-carbs"}}
+    {{input value=food.carbs id="edit-carbs"}}
   </div>
   <div class="form-group">
     <label for="fat">Fat: </label>
-    {{input value=new-fat id="new-fat"}}
+    {{input value=food.fat id="edit-fat"}}
   </div>
   <div class="form-group">
     <label for="category">Category: </label>
-    {{input value=new-category id="new-category"}}
+    {{input value=food.category id="edit-category"}}
   </div>
 
   <button {{action 'updateFood'}}>Save Food</button>

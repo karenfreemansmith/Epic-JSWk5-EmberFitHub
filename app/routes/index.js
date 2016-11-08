@@ -10,8 +10,8 @@ export default Ember.Route.extend({
       newUser.save();
       this.transitionTo('users');
     },
-    userLogIn(params) {
-  
-    }
+    // userLogIn(params) {
+    //
+    // }
   }
 });
