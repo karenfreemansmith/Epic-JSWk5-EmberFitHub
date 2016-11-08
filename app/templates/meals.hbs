@@ -1,5 +1,7 @@
 <h3>Meals</h3>
-{{simple-search}}
-{{new-meal}}
-{{find-meal}}
-{{list-meal}}
+
+{{new-meal saveMeal='saveMeal'}}
+
+{{#each model as |meal|}}
+  {{list-meal meal=meal}}
+{{/each}}

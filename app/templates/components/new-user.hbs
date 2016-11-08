@@ -3,6 +3,21 @@
 <div>
 <form>
   <div class="form-group">
+    <label for="username">Username: </label>
+    {{input value=username id="username"}}
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password: </label>
+    {{input value=password id="password"}}
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email: </label>
+    {{input value=email id="email"}}
+  </div>
+
+  <div class="form-group">
     <label for="firstname">First Name: </label>
     {{input value=firstname id="firstname"}}
   </div>
@@ -13,18 +28,12 @@
   </div>
 
   <div class="form-group">
-    <label for="username">Username: </label>
-    {{input value=username id="username"}}
-  </div>
-
-  <div class="form-group">
-    <label for="email">Email: </label>
-    {{input value=email id="email"}}
-  </div>
-
-  <div class="form-group">
     <label for="image">Image URL</label>
     {{input value=image id="image"}}
+  </div>
+  <div class="form-group">
+    <label for="goal">Daily Calorie Goal: </label>
+    {{input value=goal id="goal"}}
   </div>
 
   <button {{action 'saveUser'}}>Save</button>

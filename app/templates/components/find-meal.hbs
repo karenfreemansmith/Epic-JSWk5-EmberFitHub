@@ -1,3 +1,25 @@
-<h4>Needs:</h4>
-<li>form to edit meals</li>
-<li>delete button?</li>
+<h3>Update Meal</h3>
+{{#if editMeal}}
+<div>
+<form>
+  <div class="form-group">
+    <label for="description">Description: </label>
+    {{input value=model.description id="description"}}
+  </div>
+
+  <div class="form-group">
+    <label for="amount">Mealtime: </label>
+    {{input value=model.mealtime id="mealtime"}}
+  </div>
+
+  <div class="form-group">
+    <label for="foods">Foods: </label>
+    {{input value=model.foods id="foods"}}
+  </div>
+
+  <button {{action 'saveMeal'}}>Save Meal</button>
+</form>
+</div>
+{{else}}
+  <button {{action 'mealFormShow'}}>Edit Meal</button>
+{{/if}}

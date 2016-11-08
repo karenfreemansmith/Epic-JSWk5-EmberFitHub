@@ -1,11 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	vehicle: null,
-	vehicles: Ember.String.w('coffee tea beer tropical_drink'),
+	food: null,
+	foods: Ember.String.w('coffee tea baby_bottle beer tropical_drink sake wine_glass pizza egg bento hamburger meat_on_bone sushi fries curry stew green_apple cookie cake candy'),
 	actions: {
-		selectVehicle(vehicle) {
-			this.set('vehicle', vehicle);
+		selectFood(food) {
+			this.set('food', food);
+			console.log(food);
 		}
 	}
 });
