@@ -1,0 +1,5 @@
+<select onchange={{action "selectVehicle" value="target.value"}}>
+  {{#each vehicles as |vehicleChoice|}}
+    <option value={{vehicleChoice}} selected={{eq vehicle vehicleChoice}}>{{vehicleChoice}}</option>
+  {{/each}}
+</select>
