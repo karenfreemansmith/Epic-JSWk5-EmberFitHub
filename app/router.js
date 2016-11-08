@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('foods');
   this.route('goals');
   this.route('activities');
+  this.route('stats');
 });
 
 export default Router;
