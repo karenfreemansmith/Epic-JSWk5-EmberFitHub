@@ -20,7 +20,12 @@
     {{input value=new-fat id="new-fat"}}
   </div>
   <div class="form-group">
-    <label for="category">Category:</label>{{simple-search}}
+    <label for="category">Category:</label>
+    <select onchange={{action "selectFood" value="target.value"}} id="new-category">
+      {{#each menuFoods as |foodChoice|}}
+        <option value={{foodChoice}} selected={{eq food foodChoice}}>{{foodChoice}}</option>
+      {{/each}}
+    </select>
     {{!-- {{input value=new-category id="new-category"}} --}}
   </div>
 
