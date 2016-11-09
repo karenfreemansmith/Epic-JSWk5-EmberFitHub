@@ -4,17 +4,17 @@
 <form>
   <div class="form-group">
     <label for="description">Description: </label>
-    {{input value=model.description id="description"}}
+    {{input value=model.description id="description" class="form-control"}}
   </div>
 
   <div class="form-group">
     <label for="amount">Goal Amount: </label>
-    {{input value=model.goalamount id="amount"}}
+    {{input value=model.goalamount id="amount" class="form-control"}}
   </div>
 
   <div class="form-group">
     <label for="units">Units: </label>
-    {{input value=model.units id="units"}}
+    {{input value=model.units id="units" class="form-control"}}
   </div>
 
   <button {{action 'saveActivity'}}>Save</button>
