@@ -7,4 +7,5 @@ export default DS.Model.extend({
   carbs: DS.attr(),
   fat: DS.attr(),
   category: DS.attr(),
+  meals: DS.hasMany('meal', {async: true}),
 });

@@ -7,5 +7,7 @@ export default DS.Model.extend({
   password: DS.attr(),
   goal: DS.attr(),
   email: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
+  meals: DS.hasMany('meal', {async: true}),
+  activities: DS.hasMany('activity', {async: true})
 });
