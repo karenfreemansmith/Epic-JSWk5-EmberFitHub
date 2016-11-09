@@ -1,25 +1,26 @@
 <form>
   <div class="form-group">
     <label for="food">Food: </label>
-    {{input value=new-food id="new-food"}}
+    {{input value=new-food id="new-food" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="calories">Calories: </label>
-    {{input value=new-calories id="new-calories"}}
+    {{input value=new-calories id="new-calories" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="protein">Protein: </label>
-    {{input value=new-protein id="new-protein"}}
+    {{input value=new-protein id="new-protein" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="carbs">Carbs: </label>
-    {{input value=new-carbs id="new-carbs"}}
+    {{input value=new-carbs id="new-carbs" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="fat">Fat: </label>
-    {{input value=new-fat id="new-fat"}}
+    {{input value=new-fat id="new-fat" class="form-control"}}
   </div>
   <div class="form-group">
+
     <label for="category">Category:</label>
     <select onchange={{action "selectFood" value="target.value"}} id="new-category">
       {{#each menuFoods as |foodChoice|}}
@@ -27,6 +28,7 @@
       {{/each}}
     </select>
     {{!-- {{input value=new-category id="new-category"}} --}}
+
   </div>
 
   <button {{action 'addNewFood'}}>Add New Food</button>

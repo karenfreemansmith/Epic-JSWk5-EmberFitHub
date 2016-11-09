@@ -4,17 +4,17 @@
 <form>
   <div class="form-group">
     <label for="description">Description: </label>
-    {{input value=description id="description"}}
+    {{input value=description id="description" class="form-control"}}
   </div>
 
   <div class="form-group">
     <label for="mealtime">Mealtime: </label>
-    {{input value=mealtime id="mealtime"}}
+    {{input value=mealtime id="mealtime" class="form-control"}}
   </div>
 
   <div class="form-group">
     <label for="foods">Add Foods: </label>
-    {{input value=foods id="foods"}}
+    {{input value=foods id="foods" class="form-control"}}
   </div>
 
   <button {{action 'saveMeal'}}>Save Meal</button>
