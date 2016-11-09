@@ -1,9 +1,26 @@
 @import "ember-searchable-select/style";
 
 body {
-  font: 1.2em, impact, apple gothic;
-	background-color: silver;
-	padding-bottom: 100px;
+  font: 1.5em, impact, apple gothic;
+	background-color: white;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+h3 {
+  font-size: 40pt;
+  margin-top: 3%;
+  margin-left: 40%;
+  color: #404040
+}
+
+li {
+  list-style: none;
 }
 
 .EMOJI {
@@ -13,37 +30,37 @@ body {
   clear:both;
 }
 .week {
-  width: 9px;
+  width: 17px;
   float: left;
 }
 .a {
-	width: 8px;
-	height: 8px;
-	background: rgba(255, 0, 0, .9);
+	width: 16px;
+	height: 16px;
+	background: #1D6422;
   margin-bottom: 1px;
 }
 .b{
-	width: 8px;
-	height: 8px;
-	background: rgba(255, 0, 0, .7);
+	width: 16px;
+	height: 16px;
+	background: #419B3D;
   margin-bottom: 1px;
 }
 .c {
-	width: 8px;
-	height: 8px;
-	background: rgba(255, 0, 0, .5);
+	width: 16px;
+	height: 16px;
+	background: #8CC665;
   margin-bottom: 1px;
 }
 .d {
-	width: 8px;
-	height: 8px;
-	background: rgba(255, 0, 0, .3);
+	width: 16px;
+	height: 16px;
+	background: #D6E685;
   margin-bottom: 1px;
 }
 .f {
-	width: 8px;
-	height: 8px;
-	background: rgba(255, 0, 0, .1);
+	width: 16px;
+	height: 16px;
+	background: #DDDDDD;
   margin-bottom: 1px;
 }
 
@@ -60,6 +77,7 @@ background-position: -100px;
 height: 50vh;
 width: 120vw;
 padding-top: 50px;
+border-bottom: 10px solid #404040;
 }
 
 .usersBackground{
@@ -70,6 +88,7 @@ background-position: 0px;
 height: 50vh;
 width: 120vw;
 padding-top: 50px;
+border-bottom: 10px solid #404040;
 }
 
 .mealsBackground{
@@ -79,6 +98,7 @@ background-repeat: no-repeat;
 background-position: -75px;
 height: 50vh;
 width: 120vw;
+border-bottom: 10px solid #404040;
 }
 
 .activitiesBackground{
@@ -89,15 +109,29 @@ background-position: -100px;
 height: 50vh;
 width: 120vw;
 padding-top: 50px;
+border-bottom: 10px solid #404040;
 }
 
 .form-control {
   width: 300px;
 }
 
+.footer {
+  width:120vw;
+  height: 100px;
+  background-color: #404040;
+}
+
+.activityDisplay {
+  // display: block;
+  margin-left: 25%;
+
+}
+
+
 #overlay {
   padding: 6% 5%;
-}
+  }
 
 #logo {
 	max-width: 75%;
@@ -107,4 +141,16 @@ padding-top: 50px;
   color: white;
 	background-color: inherit;
 	shadow: 10px 10px white;
+}
+
+#right-col {
+  margin-top: 20px;
+}
+
+#time-input {
+  width: 420px;
+}
+
+#food-display {
+  font-size: 1.5em;
 }

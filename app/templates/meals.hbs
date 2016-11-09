@@ -3,19 +3,25 @@
   <br>
   <img id="logo" src="../img/fithubLogo.png" alt="logo" />
 </div>
-<div class="container"  id="overlay">
-  <div class="col-sm-5">
-
-
+<div class="routeHeadings">
 <h3>Meals</h3>
+</div>
+<div class="container"  id="overlay">
+  <div class="col-sm-5" id="food-display">
+
+
+
 
 {{new-meal saveMeal='saveMeal'}}
 </div>
-<div class="col-sm-5 col-sm-offset-2">
+<div class="col-sm-5 col-sm-offset-2" id="right-col">
+
+<div id="food-display">
 
 
 {{#each model as |meal|}}
   {{list-meal meal=meal}}
 {{/each}}
+</div>
 </div>
 </div>

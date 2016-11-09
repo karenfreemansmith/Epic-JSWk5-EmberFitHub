@@ -1,13 +1,25 @@
 
-<div class="activitiesBackground">
+<div class="activitiesBackground" id="food-display">
+  <img id="logo" src="../img/fithubLogoWhite.png" alt="logo" />
+</div>
+<div class="routeHeadings">
+  <h3>Activities</h3>
 </div>
 <div class="container"  id="overlay">
-<h3>Activities</h3>
+
+  <div class="col-sm-5" id="food-display">
+
+
+
 {{new-activity saveActivity="saveActivity"}}
+</div>
+<div class="col-sm-5 col-sm-offset-2" id="right-col">
 
-
+<div id="food-display">
 {{#each model as |activity|}}
   {{list-activity activity=activity}}
 {{/each}}
 
+</div>
+</div>
 </div>
