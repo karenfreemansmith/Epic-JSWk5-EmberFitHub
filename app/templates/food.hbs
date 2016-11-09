@@ -1,15 +1,12 @@
 <div class="foodBackground">
- <img id="logo" src="../img/fithubLogoWhite.png" alt="logo" />
+  <img id="logo" src="../img/fithubLogoWhite.png" alt="logo" />
 </div>
 <div class="container" id="overlay">
-
-
-<h2>{{model.food}}</h2>
-<h3>Calories: {{model.calories}}</h3>
-<h3>Carbs: {{model.carbs}}</h3>
-<h3>Fat: {{model.fat}}</h3>
-<h3>Protein: {{model.protein}}</h3>
-<h3>Category: {{model.category}}</h3>
-{{update-food food=model updateFood="updateFood"}}
-<button {{action 'deleteFood' model}}>Delete Food</button>
+  <h2>{{model.foodname}}</h2>
+  <h3>Calories: {{model.calories}}</h3>
+  <h3>Carbs: {{model.carbs}}</h3>
+  <h3>Fat: {{model.fat}}</h3>
+  <h3>Protein: {{model.protein}}</h3>
+  <h3>Category: {{model.category}}</h3>
+  {{update-food food=model updateFood='updateFood' deleteFood='deleteFood'}}
 </div>

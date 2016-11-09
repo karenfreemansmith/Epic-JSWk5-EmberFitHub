@@ -6,13 +6,19 @@ export default Ember.Component.extend({
     activityFormShow() {
       this.set('editActivity', true);
     },
-    saveActivity() {
+    updateActivity(activity) {
       var params = {
-        description: this.get('description') ? this.get('description') : "",
-        goalamount: this.get('goalamount') ? this.get('goalamount') : "",
-        units: this.get('units') ? this.get('units') : "",
+        description: this.get('description'),
+        goalamount: this.get('goalamount'),
+        units: this.get('units')
       };
-      this.sendAction('saveActivity', params);
+      this.set('editActivity', false);
+      this.sendAction('updateActivity', activity, params);
+    },
+    deleteActivity(activity) {
+      if(confirm('Are you sure you want to delete this activity?')) {
+        this.sendAction('deleteActivity', activity);
+      }
     }
   }
 

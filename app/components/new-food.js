@@ -14,11 +14,11 @@ export default Ember.Component.extend({
     },
     addNewFood() {
       var params = {
-        food: this.get('new-food') ? this.get('new-food') : "",
-        calories: this.get('new-calories') ? this.get('new-calories') : "",
-        protein: this.get('new-protein') ? this.get('new-protein') : "",
-        carbs: this.get('new-carbs') ? this.get('new-carbs') : "",
-        fat: this.get('new-fat') ? this.get('new-fat') : "",
+        foodname: this.get('foodname') ? this.get('foodname') : "",
+        calories: this.get('calories') ? this.get('calories') : "",
+        protein: this.get('protein') ? this.get('protein') : "",
+        carbs: this.get('carbs') ? this.get('carbs') : "",
+        fat: this.get('fat') ? this.get('fat') : "",
         category: this.get('menuFood')
       };
       this.sendAction('addNewFood', params);

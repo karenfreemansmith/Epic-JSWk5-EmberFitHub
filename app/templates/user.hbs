@@ -1,26 +1,24 @@
-
 <div class="usersBackground">
   <img id="logo" src="../img/fithubLogo.png" alt="logo" />
 </div>
 <div class="container"  id="overlay">
   <div class="col-sm-5">
-  <img src="{{model.image}}" class="profile-image">
-  <h1>{{model.username}}</h1>
+    <img src="{{model.image}}" class="profile-image">
+    <h1>{{model.username}}</h1>
 
-{{find-user user=model updateUser='updateUser' deleteUser='deleteUser'}}
+    {{find-user user=model updateUser='updateUser' deleteUser='deleteUser'}}
 
-<li>{{#link-to 'activities'}}Log Activity{{/link-to}}</li>
-<li>{{#link-to 'meals'}}Log Meal{{/link-to}}</li>
-<li>{{#link-to 'user'}}View Stats<{{/link-to}}/li>
+    <li>{{#link-to 'activities'}}Log Activity{{/link-to}}</li>
+    <li>{{#link-to 'meals'}}Log Meal{{/link-to}}</li>
+    <li>{{#link-to 'user'}}View Stats<{{/link-to}}/li>
 
-</div>
-<div class="col-sm-7">
-<h2>Activity Stats</h2>
-{{view-stats}}
+  </div>
+  <div class="col-sm-7">
+    <h2>Activity Stats</h2>
+    {{view-stats}}
 
-<h2>Diet Stats</h2>
-{{view-stats}}
+    <h2>Diet Stats</h2>
+    {{view-stats}}
 
-
-</div>
+  </div>
 </div>

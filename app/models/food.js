@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  food: DS.attr(),
+  foodname: DS.attr(),
   calories: DS.attr(),
   protein: DS.attr(),
   carbs: DS.attr(),
