@@ -9,13 +9,42 @@ body {
 .EMOJI {
 	font-size: 36px;
 }
-
-.rank {
+.clearfix {
+  clear:both;
+}
+.week {
+  width: 9px;
+  float: left;
+}
+.a {
+	width: 8px;
+	height: 8px;
+	background: rgba(255, 0, 0, .9);
+  margin-bottom: 1px;
+}
+.b{
+	width: 8px;
+	height: 8px;
+	background: rgba(255, 0, 0, .7);
+  margin-bottom: 1px;
+}
+.c {
 	width: 8px;
 	height: 8px;
 	background: rgba(255, 0, 0, .5);
-	float: left;
-	margin-left: 1px;
+  margin-bottom: 1px;
+}
+.d {
+	width: 8px;
+	height: 8px;
+	background: rgba(255, 0, 0, .3);
+  margin-bottom: 1px;
+}
+.f {
+	width: 8px;
+	height: 8px;
+	background: rgba(255, 0, 0, .1);
+  margin-bottom: 1px;
 }
 
 .profile-image {
