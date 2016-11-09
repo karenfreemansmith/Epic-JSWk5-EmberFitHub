@@ -3,12 +3,15 @@
   <img id="logo" src="../img/fithubLogoWhite.png" alt="logo" />
 </div>
 <div class="container"  id="overlay">
+  <div class="col-sm-5">
 <h3>Foods</h3>
 {{!-- {{assign-emoji food}} --}}
 {{new-food food=model addNewFood="addNewFood"}}
-
+</div>
+<div class="col-sm-5 col-sm-offset-2">
 {{#each model as |food|}}
   {{list-food food=food}}
 {{/each}}
 
+</div>
 </div>

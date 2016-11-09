@@ -4,12 +4,18 @@
   <img id="logo" src="../img/fithubLogo.png" alt="logo" />
 </div>
 <div class="container"  id="overlay">
+  <div class="col-sm-5">
+
+
 <h3>Meals</h3>
 
 {{new-meal saveMeal='saveMeal'}}
+</div>
+<div class="col-sm-5 col-sm-offset-2">
+
 
 {{#each model as |meal|}}
   {{list-meal meal=meal}}
 {{/each}}
-
+</div>
 </div>
