@@ -8,13 +8,13 @@ export default Ember.Component.extend({
     },
     saveUser() {
       var params = {
-        firstname: this.get('firstname'),
-        lastname: this.get('lastname'),
-        username: this.get('username'),
-        email: this.get('email'),
-        password: this.get('password'),
-        goal: this.get('goal'),
-        image: this.get('image'),
+        firstname: this.get('firstname') ? this.get('firstname') : "",
+        lastname: this.get('lastname')? this.get('lastname') : "",
+        username: this.get('username')? this.get('username') : "",
+        email: this.get('email')? this.get('email') : "",
+        password: this.get('password')? this.get('password') : "",
+        goal: this.get('goal')? this.get('goal') : "",
+        image: this.get('image')? this.get('image') : "",
       };
       this.set('addNewUser', false);
       this.sendAction('saveUser', params);

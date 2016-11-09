@@ -7,7 +7,7 @@ export default Ember.Component.extend({
     userFormShow() {
       this.set('editUser', true);
     },
-    saveUser() {
+    updateUser() {
       var params = {
         username: this.get('username'),
         password: this.get('password'),
@@ -15,10 +15,10 @@ export default Ember.Component.extend({
         firstname: this.get('firstname'),
         lastname: this.get('lastname'),
         image: this.get('image'),
-        goal: this.get('goal'),
+        goal: this.get('goal')
       };
       this.set('editUser', false);
-      this.sendAction('saveUser', params);
+      this.sendAction('updateUser', params);
     }
   }
 });

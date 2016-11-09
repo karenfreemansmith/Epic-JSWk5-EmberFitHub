@@ -2,6 +2,19 @@
 	font-size: 36px;
 }
 
+.rank {
+	width: 8px;
+	height: 8px;
+	background: rgba(255, 0, 0, .5);
+	float: left;
+	margin-left: 1px;
+}
+
+.profile-image {
+	width: 25%;
+	border-radius: 50%;
+}
+
 @import "ember-searchable-select/style";
 
 
