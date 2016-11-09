@@ -7,18 +7,23 @@ export default Ember.Component.extend({
     userFormShow() {
       this.set('editUser', true);
     },
-    updateUser() {
+    deleteUser(user) {
+      if(confirm('Are you sure you want to delete this user?')) {
+        this.sendAction('deleteUser', user);
+      }
+    },
+    updateUser(user) {
       var params = {
         username: this.get('username'),
-        password: this.get('password'),
         email: this.get('email'),
+        password: this.get('password'),
         firstname: this.get('firstname'),
         lastname: this.get('lastname'),
         image: this.get('image'),
         goal: this.get('goal')
       };
       this.set('editUser', false);
-      this.sendAction('updateUser', params);
+      this.sendAction('updateUser', user, params);
     }
   }
 });

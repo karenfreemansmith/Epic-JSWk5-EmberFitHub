@@ -7,8 +7,7 @@
   <img src="{{model.image}}" class="profile-image">
   <h1>{{model.username}}</h1>
 
-{{find-user user=model updateUser='updateUser'}}
-<button {{action 'deleteUser' model}}>Delete User</button>
+{{find-user user=model updateUser='updateUser' deleteUser='deleteUser'}}
 
 <li>{{#link-to 'activities'}}Log Activity{{/link-to}}</li>
 <li>{{#link-to 'meals'}}Log Meal{{/link-to}}</li>

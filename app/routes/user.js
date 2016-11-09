@@ -5,18 +5,17 @@ export default Ember.Route.extend({
     return this.store.findRecord('user', params.user_id);
   },
   actions: {
-    updateUser(model, params) {
+    updateUser(user, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
-          model.set(key,params[key]);
+          user.set(key,params[key]);
         }
       });
-      console.log(model);
-      model.save();
+      user.save();
       this.transitionTo('users');
     },
-    deleteUser(model) {
-      model.destroyRecord();
+    deleteUser(user) {
+      user.destroyRecord();
       this.transitionTo('users');
     }
   }
