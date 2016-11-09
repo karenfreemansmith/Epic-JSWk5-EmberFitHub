@@ -9,7 +9,9 @@
 
   <div class="form-group">
     <label for="amount">Mealtime: </label>
-    {{input value=model.mealtime id="mealtime" class="form-control"}}
+
+    {{pikaday-input value=model.mealtime format="MMMM Do YYYY, hh:mm"}}
+
   </div>
 
   <div class="form-group">

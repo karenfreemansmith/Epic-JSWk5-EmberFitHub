@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     saveMeal() {
       var params = {
         description: this.get('description'),
-        mealtime: (this.get('mealtime')),
+        mealtime: this.get('mealtime')  ? this.get('mealtime') : "",
         foods: this.get('foods'),
       };
       this.set('addNewMeal', false);
