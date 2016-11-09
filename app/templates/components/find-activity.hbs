@@ -4,20 +4,21 @@
 <form>
   <div class="form-group">
     <label for="description">Description: </label>
-    {{input value=model.description id="description" class="form-control"}}
+    {{input value=description placeholder=model.description id="description" class="form-control"}}
   </div>
 
   <div class="form-group">
     <label for="amount">Goal Amount: </label>
-    {{input value=model.goalamount id="amount" class="form-control"}}
+    {{input value=goalamount placeholder=model.goalamount id="amount" class="form-control"}}
   </div>
 
   <div class="form-group">
     <label for="units">Units: </label>
-    {{input value=model.units id="units" class="form-control"}}
+    {{input value=units placeholder=model.units id="units" class="form-control"}}
   </div>
 
-  <button {{action 'saveActivity'}}>Save</button>
+  <button {{action 'updateActivity' model}}>Save</button>
+  <button {{action 'deleteActivity' model}}>Delete Activity</button>
 </form>
 </div>
 {{else}}

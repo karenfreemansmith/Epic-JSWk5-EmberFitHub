@@ -6,16 +6,22 @@ export default Ember.Component.extend({
     showUpdateFood() {
       this.set('showUpdateFood', true);
     },
-    updateFood() {
+    updateFood(food) {
+      console.log(food);
       var params = {
-        food: this.get('edit-food') ? this.get('edit-food') : "",
-        calories: this.get('edit-calories') ? this.get('edit-calories') : "",
-        protein: this.get('edit-protein') ? this.get('edit-protein') : "",
-        carbs: this.get('edit-carbs') ? this.get('edit-carbs') : "",
-        fat: this.get('edit-fat') ? this.get('edit-fat') : "",
-        category: this.get('edit-category') ? this.get('edit-category') : "",
+        foodname: this.get('foodname'),
+        calories: this.get('calories'),
+        protein: this.get('protein'),
+        carbs: this.get('carbs'),
+        fat: this.get('fat'),
+        category: this.get('category'),
       };
-      this.sendAction('updateFood', params);
+      this.sendAction('updateFood', food, params);
+    },
+    deleteFood(food) {
+      if(confirm('Are you sure you want to delete this food?')) {
+        this.sendAction('deleteFood', food);
+      }
     }
   }
 });

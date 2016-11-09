@@ -1,31 +1,32 @@
 {{#if showUpdateFood}}
 <form>
   <div class="form-group">
-    <label for="food">Food: </label>
-    {{input value=food.food id="edit-food" class="form-control"}}
+    <label for="foodname">Food: </label>
+    {{input value=foodname placeholder=food.foodname id="foodname" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="calories">Calories: </label>
-    {{input value=food.calories id="edit-calories" class="form-control"}}
+    {{input value=calories placeholder=food.calories id="calories" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="protein">Protein: </label>
-    {{input value=food.protein id="edit-protein" class="form-control"}}
+    {{input value=protein placeholder=food.protein id="protein" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="carbs">Carbs: </label>
-    {{input value=food.carbs id="edit-carbs" class="form-control"}}
+    {{input value=carbs placeholder=food.carbs id="carbs" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="fat">Fat: </label>
-    {{input value=food.fat id="edit-fat" class="form-control"}}
+    {{input value=fat placeholder=food.fat id="fat" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="category">Category: </label>
-    {{input value=food.category id="edit-category" class="form-control"}}
+    {{input value=category placeholder=food.category id="category" class="form-control"}}
   </div>
 
-  <button {{action 'updateFood'}}>Save Food</button>
+  <button {{action 'updateFood' food}}>Save Food</button>
+  <button {{action 'deleteFood' food}}>Delete Food</button>
 </form>
 
 {{else}}

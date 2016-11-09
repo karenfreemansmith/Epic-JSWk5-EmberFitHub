@@ -6,11 +6,11 @@ export default Ember.Route.extend({
  },
  actions: {
    updateActivity(activity, params) {
-    Object.keys(params).forEach(function(key) {
-      if(params[key]!==undefined) {
-        activity.set(key,params[key]);
-      }
-    });
+     Object.keys(params).forEach(function(key) {
+       if(params[key]!==undefined) {
+         activity.set(key,params[key]);
+       }
+     });
     activity.save();
     this.transitionTo('activities');
   },
