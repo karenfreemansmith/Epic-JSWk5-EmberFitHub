@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('activity', {path: '/activity/:activity_id'});
   this.route('meal', {path: '/meal/:meal_id'});
   this.route('user', {path: '/user/:user_id'});
+  this.route('day', {path: '/day/:day_id'});
 });
 
 export default Router;
