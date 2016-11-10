@@ -1,3 +1,23 @@
-<h1>This is a day!</h1>
-<a href="/foods">Log Food</a>
-<a href="/activities">Log Activities</a>
+<div class="mealsBackground">
+	<br>
+	<br>
+	<img id="logo" src="../img/fithubLogo.png" alt="logo" />
+</div>
+<div class="container" id="overlay">
+<div class="col-xs-5" id="food-display">
+
+
+
+<h2>{{model.description}}</h2>
+
+
+{{find-meal model=model}}
+<button {{action 'linktoFood' }}>Log Food</button>
+<<button {{action 'linktoActivities' }}>Log Activity</button>
+</div>
+
+</div>
+
+
+{{!-- {{#link-to 'food'}}<button>Log Food</button>{{/link-to}} --}}
+{{!-- <a href="/activities">Log Activities</a> --}}

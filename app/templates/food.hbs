@@ -2,15 +2,19 @@
   <img id="logo" src="../img/fithubLogoWhite.png" alt="logo" />
 </div>
 <div class="container" id="overlay">
+<div class="col-xs-5" id="emoji">
+<span><i class='em em-{{model.category}}'></i></span>
 
+</div>
+<div class="col-xs-5 col-xs-offset-2">
 <div id="food-display">
-<h2>{{model.foodname}}</h2>
-<h3>Calories: {{model.calories}}</h3>
-<h3>Carbs: {{model.carbs}}</h3>
-<h3>Fat: {{model.fat}}</h3>
-<h3>Protein: {{model.protein}}</h3>
-<h3>Category: {{model.category}}</h3>
-{{update-food food=model updateFood='updateFood' deleteFood='deleteFood'}}
+<h1>{{model.foodname}}</h1>
+<h2>Calories: {{model.calories}}</h2>
+<h2>Carbs: {{model.carbs}}</h2>
+<h2>Fat: {{model.fat}}</h2>
+<h2>Protein: {{model.protein}}</h2>
 
+{{update-food food=model updateFood='updateFood' deleteFood='deleteFood'}}
+</div>
 </div>
 </div>
