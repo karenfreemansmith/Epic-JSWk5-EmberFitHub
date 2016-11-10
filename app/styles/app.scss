@@ -2,7 +2,7 @@
 
 body {
   font: 1.5em, impact, apple gothic;
-	background-color: white;
+	background-color: #f2f2f2;
 }
 
 // button {
@@ -24,7 +24,7 @@ li {
 }
 
 .footer h4 {
-  text-align: center;
+  padding-left: 32%;
   padding-top: 15px;
 }
 
@@ -145,14 +145,37 @@ border-bottom: 10px solid #404040;
 .activityDisplay {
   // display: block;
   margin-left: 25%;
+  margin-top: -7%;
+  margin-bottom: 5%;
+
 
 }
+.routeHeadingsUsers
+{
+  padding-left: 5%;
+  padding-bottom: -300px;
+}
 
+.routeHeadingsDaily {
+  padding-left: 3%;
+}
+.routeHeadingsFoods {
+  padding-left: 5%;
+}
+
+.routeHeadingsActivities {
+  padding-left: 2%;
+}
+
+#activityLog {
+  min-height: 240px;
+}
 
 
 #overlay {
   padding: 6% 5%;
   }
+
 
 #logo {
 	max-width: 75%;
@@ -175,4 +198,8 @@ border-bottom: 10px solid #404040;
 #food-display {
   font-size: 1.5em;
   min-height: 420px;
+}
+
+#dayLogs {
+  min-height: 200px;
 }
