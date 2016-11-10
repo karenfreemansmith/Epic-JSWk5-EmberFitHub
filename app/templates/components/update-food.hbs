@@ -25,10 +25,10 @@
     {{input value=category placeholder=food.category id="category" class="form-control"}}
   </div>
 
-  <button {{action 'updateFood' food}}>Save Food</button>
-  <button {{action 'deleteFood' food}}>Delete Food</button>
+  <button {{action 'updateFood' food}} class="btn btn-danger form-control">Save Food</button>
+  <button {{action 'deleteFood' food}} class="btn btn-danger form-control">Delete Food</button>
 </form>
 
 {{else}}
-  <button {{action 'showUpdateFood'}}>Edit Food</button>
+  <button {{action 'showUpdateFood'}} class="btn btn-danger form-control">Edit Food</button>
 {{/if}}

@@ -34,10 +34,10 @@
     <label for="goal">Daily Calorie Goal: </label>
     {{input value=goal placeholder=user.goal class="form-control"}}
   </div>
-  <button {{action 'updateUser' user}}>Save Changes</button>
+  <button {{action 'updateUser' user}} class="btn btn-default form-control">Save Changes</button>
 </form>
 
-<button {{action 'deleteUser' user}}>Delete {{user.username}}</button>
+<button {{action 'deleteUser' user}} class="btn btn-default form-control">Delete {{user.username}}</button>
 {{else}}
-  <button {{action 'userFormShow'}}>Edit User</button>
+  <button {{action 'userFormShow'}} class="btn btn-default form-control">Edit User</button>
 {{/if}}

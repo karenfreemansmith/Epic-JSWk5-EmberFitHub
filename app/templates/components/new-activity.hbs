@@ -17,9 +17,9 @@
     {{input value=units id="units" class="form-control"}}
   </div>
 
-  <button {{action 'saveActivity'}}>Save</button>
+  <button {{action 'saveActivity'}} class="btn btn-info form-control">Save</button>
 </form>
 </div>
 {{else}}
-  <button {{action 'activityFormShow'}}>Add Activity</button>
+  <button {{action 'activityFormShow'}} class="btn btn-info form-control">Add Activity</button>
 {{/if}}

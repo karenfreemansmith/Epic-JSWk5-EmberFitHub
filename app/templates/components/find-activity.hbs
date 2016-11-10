@@ -17,10 +17,10 @@
     {{input value=units placeholder=model.units id="units" class="form-control"}}
   </div>
 
-  <button {{action 'updateActivity' model}}>Save</button>
-  <button {{action 'deleteActivity' model}}>Delete Activity</button>
+  <button {{action 'updateActivity' model}} class="btn btn-info form-control">Save</button>
+  <button {{action 'deleteActivity' model}} class="btn btn-info form-control">Delete Activity</button>
 </form>
 </div>
 {{else}}
-  <button {{action 'activityFormShow'}}>Edit Activity</button>
+  <button {{action 'activityFormShow'}} class="btn btn-info form-control">Edit Activity</button>
 {{/if}}

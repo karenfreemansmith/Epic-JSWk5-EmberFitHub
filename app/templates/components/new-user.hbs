@@ -37,9 +37,9 @@
     {{input value=goal id="goal"class="form-control"}}
   </div>
 
-  <button {{action 'saveUser'}}>Save</button>
+  <button {{action 'saveUser'}} class="btn btn-default form-control">Save</button>
 </form>
 </div>
 {{else}}
-  <button {{action 'userFormShow'}}>Sign-Up</button>
+  <button {{action 'userFormShow'}} class="btn btn-default form-control">Sign-Up</button>
 {{/if}}
