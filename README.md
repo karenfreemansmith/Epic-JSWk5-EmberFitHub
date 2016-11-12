@@ -10,17 +10,12 @@ Epicodus JavaScript Week 5 Group Project by
 * [Garrett Price](https://github.com/GarrettLeePrice)
 * [Karen Freeman-Smith](https://github.com/karenfreemansmith)
 
-An application to track progress on your health and fitness goals written with TypeScript, Sass, Angular 2, and Firebase
+An application to track progress on your health and fitness goals written with Ember.js, Sass, and Firebase
 
 ### Specifications
 * Enter Foods:
-  * Add or edit foods on the list to keep track of their nutritional qualities like calories, fat, carbs, protein (with the possibility of adding more nutritional data)
-  * Allow user to look up foods from an API or enter them by hand.
+  * Add or edit foods on the list to keep track of their nutritional qualities like calories, fat, carbs, protein
   * Foods get an icon based on the category of the food
-* Enter Meals:
-  * Add or edit timestamp for meal
-  * Add foods to a meal (with adjustable portion sizes to calculate their actual values)
-  * Show a summary (possibly a graph) of nutrition by meal, day, week, etc.
 * Set Diet Goals:
   * Set a target goal for daily diet (in calories/fat/carbs/protein etc)
 * Enter Activities:
@@ -28,51 +23,35 @@ An application to track progress on your health and fitness goals written with T
   * Record completed activities with percentage of goal reached
 * Display daily progress with various colored squares for the past year
   * 5 colors (shown as opacity): ... all effort gets some reward, extra effort gets extra reward.
-  * 10% opacity = ANY effort
-  * 30% opacity = 33% effort (? should this be more, 50% maybe?)
-  * 50% opacity = 67% effort (? if other is 50% should this be 75%, 90%?)
-  * 70% opacity = 100% effort
+  * 10% opacity <= 0% effort
+  * 30% opacity > 0% effort
+  * 50% opacity > 50% effort
+  * 70% opacity > 90% effort
   * 90% opacity > 100% effort
-* Store data:
-  * in local storage (if database is not possible)
-  * or, preferably in database with user login
-* (Optional...) Add results tracking (weight/inches):
-  * Add new "check-in"
-  * Display chart of all checkins for date range
+* Store data in Firebase data storage
 
 #### Database Diagram
 ![database diagram](database.png)
 
-
-
 ## Installation
-
 * `git clone <repository-url>` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
 
 ## Running / Development
-
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Running Tests
-
 * `ember test`
 * `ember test --server`
 
 ### Building
-
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
 ## Further Reading / Useful Links
-
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://ember-cli.com/)
 * Development Browser Extensions
@@ -83,10 +62,13 @@ Specify what it takes to deploy your app.
 For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
 ## Known Issues (*Desired Improvements*)
-*
+* Track user from "sign in" and filter display to only that user's info
+* Add a date object to track progress and logging information, sum totals for day
+* Add API to look up food information (calories and other nutrients)
+* Connect daily progress to heat map based on % of goal met
 
 ## Technologies Used
-TypeScript, Angular2, Sass, Gulp, Bower
+Ember.js, Firebase, Sass, Gulp, Bower
 
 ## Legal
 *Licensed under the GNU General Public License v3.0*
