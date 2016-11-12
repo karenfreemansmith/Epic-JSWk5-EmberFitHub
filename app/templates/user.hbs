@@ -6,6 +6,7 @@
     <img src="{{model.image}}" class="profile-image">
     <div class="col-xs-5 col-offset-2">
       <h1>{{model.username}}</h1>
+      {{display-current}}
       <div id="food-display">
         {{find-user user=model updateUser='updateUser' deleteUser='deleteUser'}}
       </div>

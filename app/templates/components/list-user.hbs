@@ -1,1 +1,1 @@
-{{#link-to 'user' user.id }}<h2>{{user.username}}</h2>{{/link-to}}
+{{#link-to 'user' user.id }}<h2 {{action 'setUser' user}}>{{user.username}}</h2>{{/link-to}}
